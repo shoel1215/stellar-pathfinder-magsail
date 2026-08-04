@@ -1,0 +1,111 @@
+# Stellar PF-MagSail  
+## Technical Disclosure for Defensive Publication
+
+**Public Domain Dedication**  
+All subject matter described in this document is dedicated to the public domain under CC0 1.0 Universal. No rights are reserved. This disclosure is made for the purpose of establishing prior art.
+
+---
+
+### 1. Field of the Invention
+
+Superconducting magnetic sails, orbital thermal management of high-temperature superconductors, electrodynamic deployment mechanisms, modular orbital assembly of large-scale superconducting structures, and active magnetic radiation shielding for crewed spacecraft.
+
+### 2. Background and Problem Statement
+
+Conventional magnetic sails and superconducting coils in space suffer from three primary limitations:
+
+- Continuous power and cryogen consumption required to maintain superconducting state.
+- Mechanical complexity and mass of deployment systems (motors, hinges, booms).
+- Inability to reconfigure magnetic topology after launch or to scale from CubeSat to kilometer-class structures without catastrophic quench risk.
+
+Existing approaches rely on active cryocoolers with limited lifetime, expendable cryogens, or non-persistent current modes. No practical system simultaneously solves persistent-field maintenance, motorless deployment, in-orbit reconfigurability, and fault-tolerant modular scaling.
+
+### 3. Summary of the Invention
+
+The present disclosure describes a Persistent-Field Magnetic Sail (PF-MagSail) architecture based on magnesium diboride (MgB₂) superconducting coils that achieves:
+
+1. Indefinite persistent current without active recharge or expendable cryogen through orbital thermal cycling.
+2. Fully electrodynamic, motorless self-deployment.
+3. Real-time in-orbit reconfiguration of coil geometry and magnetic topology.
+4. Modular, robotically assemblable construction with per-segment quench isolation enabling scaling from 1 m to 1 km class structures.
+
+A commercial terrestrial spin-off (Pathfinder Thermal Module) is also disclosed.
+
+### 4. Core Inventions
+
+#### 4.1 Orbital Thermal Cycling Regenerator
+
+A pulse-tube cryocooler is thermally coupled to a phase-change material (PCM) thermal battery using a DMSO/water mixture. The system exploits the natural day/night thermal gradient of low Earth orbit.
+
+During orbital day, excess heat is rejected and the PCM is charged. During orbital night, the stored latent heat capacity is used to maintain the cryocooler cold-head temperature near 30 K, regenerating cooling capacity without continuous electrical input or expendable cryogen.
+
+The regenerator enables a superconducting MgB₂ coil to remain in the persistent-current mode indefinitely after a single initial charge, limited only by residual resistance and radiation effects rather than thermal budget.
+
+#### 4.2 Electrodynamic Self-Deployment System
+
+The superconducting coil is packaged in a compact stowed configuration. Upon initial energization, the Lorentz forces arising from the interaction of the coil’s own current with its self-generated magnetic field produce an outward radial force.
+
+Permanent-magnet snap-fit latches are arranged such that the expanding coil engages mechanical and electrical contacts sequentially. No motors, pyrotechnics, hinges, or external magnetic fields are required. Deployment is driven solely by the coil’s electrodynamic self-force and passive magnetic latching.
+
+#### 4.3 Reconfigurable Superconducting Geometry
+
+The coil is divided into independently controllable segments. By sequenced energization and selective persistent-current capture of individual segments, the overall geometry can be changed in orbit among at least the following topologies:
+
+- Planar loop
+- Conical
+- Split / multi-loop configurations
+
+This capability enables real-time thrust vectoring via interaction with the solar wind, torque cancellation, and optimization of magnetic moment orientation. Geometry changes occur while the coil remains in the superconducting persistent-current state.
+
+### 5. Supporting Novel Technologies
+
+#### 5.1 Persistent-Field Magnetic Sail (PF-MagSail) Architecture
+
+A complete system architecture for a superconducting MagSail that maintains multi-Tesla fields indefinitely after a single charge cycle. The architecture is designed from the outset for CubeSat-class (≈1 m) demonstration and subsequent scaling to 100 m and 1 km class structures.
+
+#### 5.2 Modular Segment-Based Orbital Assembly System
+
+Standardized 1 m MgB₂ coil segments are pre-wound with integrated cryocooler interfaces, diagnostic sensors, electrical connectors, and magnetic snap-fit mechanical/electrical joints. Segments are designed for robotic assembly in orbit into arbitrarily large continuous or multi-loop structures.
+
+#### 5.3 Per-Segment Quench Protection and Isolation
+
+Each segment incorporates bypass diodes, thermal fuses, and redundant current paths. Quench of a single segment triggers isolation of that segment without interrupting the persistent current in the remainder of the coil. This feature is essential for reliable scaling beyond tens of meters.
+
+#### 5.4 Magnetic Field Shaping for Crew Radiation Shielding
+
+The large-scale persistent coil is operated in a topology that creates low-flux equatorial “safe zones.” Charged particle trajectories are diverted around these zones. The magnetic shielding is combined with passive water or hydrogen-rich shielding to provide hybrid radiation protection for crewed habitats.
+
+#### 5.5 Sequential Energization Assembly Protocol
+
+A controlled, step-by-step procedure for charging and verifying large modular superconducting loops in orbit. The protocol coordinates segment energization, persistent-current capture, joint integrity checks, and quench-protection validation with assembly robots.
+
+#### 5.6 Specialized Assembly Robot End Effectors (PF-3)
+
+Vision-guided end effectors optimized for cold-welding or precision crimping of superconducting joints, alignment of magnetic snap-fit interfaces, and in-situ verification of persistent-current continuity under vacuum conditions.
+
+#### 5.7 Pathfinder Thermal Module (Commercial Spin-off)
+
+A standalone terrestrial product derived directly from the orbital regenerator technology. It consists of a high-margin 30 K pulse-tube cryocooler coupled to a PCM regenerator, packaged for laboratory, quantum-computing, and infrared-sensor applications.
+
+### 6. Preferred Embodiments
+
+- Conductor: MgB₂ wire or tape, operating temperature ≈30 K.
+- PCM: DMSO/water eutectic or equivalent high-latent-heat mixture matched to orbital thermal cycle.
+- Scale path: 1 m CubeSat demonstrator → 10 m → 100 m → 1 km modular assemblies.
+- Deployment: electrodynamic self-deployment for the initial coil; robotic segment addition for larger structures.
+- Quench management: distributed per-segment protection with global monitoring.
+
+### 7. Industrial Applicability
+
+- Propellantless propulsion and station-keeping via solar-wind interaction.
+- Active radiation shielding for crewed deep-space and lunar missions.
+- Large-scale orbital infrastructure assembly (power, propulsion, or scientific structures).
+- Terrestrial cryogenic systems for quantum computing and sensitive detectors.
+
+### 8. Public Domain Status
+
+This document and all inventions described herein are dedicated to the public domain under CC0 1.0 Universal. Anyone may freely use, modify, manufacture, sell, or improve upon the disclosed subject matter without restriction or attribution.
+
+---
+
+*First public disclosure: repository commit date of this file.*
